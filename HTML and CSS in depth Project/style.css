@@ -83,3 +83,54 @@ li {
 .nav-list li a:hover {
   background-color: #ddd; /* Optional: hover effect for the links */
 }
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates flexible columns */
+  gap: 2vw; /* Adds space between grid items */
+  padding: 1vw;
+}
+
+.content-header {
+  font-size: 1.5rem;
+}
+
+.content-item{
+  display: flex; /* Enables Flexbox for each grid item */
+  flex-direction: column; /* Aligns items in a column (vertical) */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  background-color: #f9f9f9; 
+  padding: 10px; /* Adds padding inside each grid item */
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+  text-align: center; /* Centers the text within the flexbox */
+}
+
+.content-link {
+  text-decoration: none; /* Removes the underline from the link */
+  color: inherit; /* Keeps the text color unchanged */
+  display: flex; /* Allows the link to behave as a block-level element */
+  flex-direction: column; /* Ensures the link wraps the entire content */
+  justify-content: center; /* Vertically centers content inside the link */
+  align-items: center; /* Horizontally centers content inside the link */
+  width: 100%; /* Ensures the link covers the full width of the grid item */
+  height: 100%; /* Ensures the link covers the full height of the grid item */
+}
+
+#hours{
+  font-weight: bold;
+}
+
+#hours li{
+  display: inline-block;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  text-align: center; /* Centers the text */
+  margin-top: 0.5vw; /* Adds some space above the footer */
+  border-top: 2px solid #333; /* Adds a top border to separate the footer from the content */
+  font-size: 1rem; /* Sets the font size */
+  color: #333; /* Sets the text color */
+}
